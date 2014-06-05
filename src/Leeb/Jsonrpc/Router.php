@@ -4,6 +4,7 @@ use Leeb\Jsonrpc\Interfaces\RouterInterface;
 use Leeb\Jsonrpc\Interfaces\RawRequestInterpreterInterface;
 use Leeb\Jsonrpc\Interfaces\JsonrpcResponseBuilderInterface;
 use Leeb\Jsonrpc\Exceptions\ParseErrorException;
+use Log;
 
 class Router implements RouterInterface
 {

@@ -4,6 +4,7 @@ use Leeb\Jsonrpc\Interfaces\RawRequestInterpreterInterface;
 use Leeb\Jsonrpc\Interfaces\RequestValidatorInterface;
 use Leeb\Jsonrpc\Interfaces\JsonrpcResponseBuilderInterface;
 use Leeb\Jsonrpc\Exceptions\InvalidRequestException;
+use Log;
 
 class RawRequestInterpreter implements RawRequestInterpreterInterface
 {
