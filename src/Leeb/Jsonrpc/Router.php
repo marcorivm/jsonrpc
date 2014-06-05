@@ -21,6 +21,8 @@ class Router implements RouterInterface
 			$routable = $this->interpreter->interpretRawRequest($raw_request);
 			$result = $routable->route();
 		} catch (\Exception $e) {
+				Log::info('-- Router --');
+				Log::info($e);
 			$result = $this->response_builder->buildFromException(null, $e);
 		}
 

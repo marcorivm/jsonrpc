@@ -14,4 +14,9 @@ abstract class JsonrpcException extends \Exception
 	{
 		return $this->data;
 	}
+
+	public function getError()
+	{
+		return "Default error";
+	}
 }

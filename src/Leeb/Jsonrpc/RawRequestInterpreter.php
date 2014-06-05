@@ -38,6 +38,8 @@ class RawRequestInterpreter implements RawRequestInterpreterInterface
 				$request = $this->buildSingleRequest($raw_request);
 				$batch->addIndividualRequest($request);
 			} catch (\Exception $e) {
+				Log::info('-- Raw --');
+				Log::info($e);
 				$response = $this->response_builder->buildFromException(null, $e);
 				$batch->addIndividualResponse($response);
 			}
